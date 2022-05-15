@@ -4,58 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d625f57-b153-4f9c-80a8-156f302ff858" name="Changes" comment="Updated  home page">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Personal-Website.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/website/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/website/index.HTML" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/views.py" afterDir="false" />
+    <list default="true" id="1d625f57-b153-4f9c-80a8-156f302ff858" name="Changes" comment="Add home page intro section">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/facebook-negative.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/github-negative.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/go-top-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/instagram-negative.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/linkedIn-negative.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/light-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/profile-pic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Personal-Website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Personal-Website.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Badge Linux Command Line Mastery.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Badge Python Mastery.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/profilePic1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/profilePic2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/profilePic3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/profilePic4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/python(basics)certifications.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/website/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/website/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/website/index.HTML" beforeDir="false" afterPath="$PROJECT_DIR$/templates/website/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="bootstrap5.2.0" />
         <option value="HTML bootstrap 5.2.0 beta" />
         <option value="HTML File" />
         <option value="Django Base  bootstrap" />
         <option value="Django Base Extension" />
         <option value="Python Script" />
+        <option value="Sass File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -66,6 +54,10 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBowerSettings">
+    <bower-package value="" />
+    <bower.json value="" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -87,6 +79,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/home/vedvund/PycharmProjects/Personal-Website/config/settings.py",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
@@ -94,7 +87,7 @@
     "node.js.selected.package.stylelint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.django.DjangoModulesConfigurable"
+    "settings.editor.selected.configurable": "preferences.externalResources"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -108,7 +101,8 @@
       <workItem from="1646666906398" duration="12307000" />
       <workItem from="1647190160803" duration="3864000" />
       <workItem from="1647194057159" duration="77000" />
-      <workItem from="1652604544195" duration="2457000" />
+      <workItem from="1652604544195" duration="3254000" />
+      <workItem from="1652617052465" duration="12125000" />
     </task>
     <task id="LOCAL-00001" summary="Added - WebStorm initial files...">
       <created>1646667073548</created>
@@ -124,7 +118,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647193930053</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add django project setup files">
+      <created>1652607034876</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1652607034876</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add django project setup files">
+      <created>1652607126934</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652607126934</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +153,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added - WebStorm initial files..." />
     <MESSAGE value="Updated  home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated  home page" />
+    <MESSAGE value="Add django project setup files" />
+    <MESSAGE value="Add home page intro section" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add home page intro section" />
   </component>
 </project>

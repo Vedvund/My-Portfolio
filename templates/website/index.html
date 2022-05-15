@@ -1,0 +1,30 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}
+{% endblock %}
+
+{% block style %}
+{% endblock %}
+
+{% block body %}
+    <section id="intro">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-5 p-5 p-md-3">
+                <h3>Hello, I’m Vedavyas Vundyala.<br>A full-stack web developer.</h3>
+                <br>
+                <p>Clarity, empathy, and integrity are my top priorities. I strive to live by these principles in all my
+                    endeavors.</p>
+                <hr>
+                <a href="https://www.linkedin.com/in/vedavyas-vundyala/" target="_blank"><img src="{% static 'images/icons/linkedIn-negative.svg' %}" alt="linkedIn icon"></a>
+                <a href="https://github.com/Vedvund" target="_blank"><img src="{% static 'images/icons/github-negative.svg' %}" alt="github icon"></a>
+            </div>
+            <div class="col-md-5 p-md-3 pb-5 text-center">
+                <img src="{% static 'images/profile-pic.svg' %}" alt="Profile Pic">
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block script %}
+{% endblock %}
