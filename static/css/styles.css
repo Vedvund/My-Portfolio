@@ -51,3 +51,34 @@ footer {
 #intro .row {
     min-height: calc(100vh - 75px);
 }
+
+
+.about-card {
+    background-color: var(--light-bg-color);
+    border-radius: 30px;
+    min-height: 350px;
+    max-width: 290px;
+}
+
+.about-card H5 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.skills-box {
+    background-color: var(--light-bg-color);
+    border-radius: 30px;
+}
+
+.skill-name {
+    width: 100px;
+}
+
+.skill-name {
+    min-width: 100px;
+}
+
+.skill-rating {
+    min-width: 100px;
+}

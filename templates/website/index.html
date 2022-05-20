@@ -5,6 +5,7 @@
 {% endblock %}
 
 {% block style %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 {% endblock %}
 
 {% block body %}
@@ -16,11 +17,88 @@
                 <p>Clarity, empathy, and integrity are my top priorities. I strive to live by these principles in all my
                     endeavors.</p>
                 <hr>
-                <a href="https://www.linkedin.com/in/vedavyas-vundyala/" target="_blank"><img src="{% static 'images/icons/linkedIn-negative.svg' %}" alt="linkedIn icon"></a>
-                <a href="https://github.com/Vedvund" target="_blank"><img src="{% static 'images/icons/github-negative.svg' %}" alt="github icon"></a>
+                <a href="https://www.linkedin.com/in/vedavyas-vundyala/" target="_blank"><img
+                        src="{% static 'images/icons/linkedIn-negative.svg' %}" alt="linkedIn icon"></a>
+                <a href="https://github.com/Vedvund" target="_blank"><img
+                        src="{% static 'images/icons/github-negative.svg' %}" alt="github icon"></a>
             </div>
             <div class="col-md-5 p-md-3 pb-5 text-center">
                 <img src="{% static 'images/profile-pic.svg' %}" alt="Profile Pic">
+            </div>
+        </div>
+    </section>
+    <section id="design-approach">
+        <div class="row justify-content-center align-items-center text-center">
+            <h1>Design Approach</h1>
+            <div class="col">
+                <div class="row my-md-5 my-3 justify-content-center align-items-center">
+                    <div class="col-md-3 py-4 about-card m-2">
+                        <img class="pb-4" src="{% static 'images/about-cards/responsive.svg' %}" alt="responsive">
+                        <h5 class="pb-4">Responsive</h5>
+                        <p>My layouts will work on any device, big or small.</p>
+                    </div>
+                    <div class="col-md-3 py-4 about-card m-2">
+                        <img class="pb-4" src="{% static 'images/about-cards/easy-to-use.svg' %}" alt="easy to use">
+                        <h5 class="pb-4">Easy to Use</h5>
+                        <p>Strong preference for easy to use, intuitive UX/UI.</p>
+                    </div>
+                    <div class="col-md-3 py-4 about-card m-2">
+                        <img class="pb-4" src="{% static 'images/about-cards/fast.svg' %}" alt="easy to use">
+                        <h5 class="pb-4">Fast</h5>
+                        <p>Fast load times and lag free interaction, my highest priority.</p>
+                    </div>
+                    <div class="col-md-3 py-4 about-card m-2">
+                        <img class="pb-4" src="{% static 'images/about-cards/dynamic.svg' %}" alt="easy to use">
+                        <h5 class="pb-4">Dynamic</h5>
+                        <p>Websites don't have to be static, I love making pages come to life.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="row justify-content-center align-items-center">
+            <h1 class="text-center">My Skills</h1>
+            <div class="col-md-11 skills-box m-5 p-4">
+                <div class="row">
+                    <h5 class="pb-3">Tools & Technologies</h5>
+                    <div class="col-md-4 px-3">
+                        <div class="w-50 float-start">
+                            HTML
+                        </div>
+                        <div class="w-50 float-end">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star-half"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 px-3">
+                        <div class="w-50 float-start">
+                            CSS
+                        </div>
+                        <div class="w-50 float-end">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star-half"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 px-3">
+                        <div class="w-50 float-start">
+                            JavaScript
+                        </div>
+                        <div class="w-50 float-end">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star-half"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
