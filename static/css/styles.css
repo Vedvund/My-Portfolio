@@ -35,6 +35,26 @@ nav {
     background-color: var(--main-bg-color) !important;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--main-bg-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
 img {
     object-fit: cover;
 }
@@ -81,4 +101,26 @@ footer {
 
 .skill-rating {
     min-width: 100px;
+}
+
+.project-card {
+    background-color: var(--light-bg-color);
+    border-radius: 30px;
+    max-width: 390px;
+
+}
+
+.contact-form {
+    background-color: var(--light-bg-color);
+    border-radius: 30px;
+}
+
+.form-control {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+.form-control:focus {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
 }
