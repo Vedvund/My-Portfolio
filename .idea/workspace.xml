@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d625f57-b153-4f9c-80a8-156f302ff858" name="Changes" comment="Update Doc index.html">
-      <change beforePath="$PROJECT_DIR$/.idea/Personal-Website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Personal-Website.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/website/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/website/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/website/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/website/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="1d625f57-b153-4f9c-80a8-156f302ff858" name="Changes" comment="add fontawesome package" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +99,7 @@
       <workItem from="1653113139514" duration="4907000" />
       <workItem from="1653118174646" duration="122000" />
       <workItem from="1653198201034" duration="2063000" />
-      <workItem from="1653200301811" duration="1544000" />
+      <workItem from="1653200301811" duration="1587000" />
     </task>
     <task id="LOCAL-00001" summary="Added - WebStorm initial files...">
       <created>1646667073548</created>
@@ -143,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653198245479</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add fontawesome package">
+      <created>1653201881691</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1653201881691</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +167,7 @@
     <MESSAGE value="Add design-approach &amp; skills sections" />
     <MESSAGE value="Add projects and contact section" />
     <MESSAGE value="Update Doc index.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Doc index.html" />
+    <MESSAGE value="add fontawesome package" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fontawesome package" />
   </component>
 </project>
