@@ -124,3 +124,19 @@ footer {
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
 }
+
+
+.fa-brands {
+    color: var(--main-text-color);
+    font-size: 1.25rem;
+}
+
+.fa-solid {
+    color: var(--main-text-color);
+    font-size: 1.25rem;
+}
+
+.fa-angles-up {
+    color: var(--main-text-color);
+    font-size: 2rem;
+}
