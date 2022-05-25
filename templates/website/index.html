@@ -11,23 +11,21 @@
     <section id="intro">
         <div class="row justify-content-center align-items-center">
             <div class="col-md-5 p-5 p-md-3">
-                <h3>Hello, I’m Vedavyas Vundyala.<br>A full-stack web developer.</h3>
+                <h3>Hello, I’m {{ user.first_name }} {{ user.last_name }}.<br>A {{ personal_info.role }}.</h3>
                 <br>
-                <p>Clarity, empathy, and integrity are my top priorities. I strive to live by these principles in all my
-                    endeavors.</p>
+                <p>{{ personal_info.summary }}</p>
                 <hr>
-                <a href="https://www.linkedin.com/in/vedavyas-vundyala/" target="_blank"><i
+                <a href="{{ personal_info.linkedin_link }}" target="_blank"><i
                         class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/Vedvund" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="{{ personal_info.github_link }}" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
             <div class="col-md-5 p-md-3 pb-5 text-center">
-                <img src="{% static 'images/profile-pic.svg' %}" alt="Profile Pic">
+                <img id="profilePic" src="{{ personal_info.profile_pic.url }}" alt="Profile Pic">
             </div>
         </div>
     </section>
-    <hr>
     <section id="design-approach">
-        <div class="row justify-content-center align-items-center text-center">
+        <div class="row justify-content-center align-items-center text-center my-auto">
             <h1>Design Approach</h1>
             <div class="col">
                 <div class="row my-md-5 my-3 justify-content-center align-items-center">
@@ -55,54 +53,44 @@
             </div>
         </div>
     </section>
-    <hr>
     <section id="skills">
         <div class="row justify-content-center align-items-center">
             <h1 class="text-center">Skills</h1>
             <div class="col-11 skills-box m-5 p-4">
-                <div class="row">
-                    <h5 class="pb-3">Tools & Technologies</h5>
-                    <div class="col-md-4 px-3">
-                        <div class="w-50 float-start">
-                            HTML
-                        </div>
-                        <div class="w-50 float-end">
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star-half"></span>
-                        </div>
+                {% for skill_type in skill_types %}
+                    <div class="row">
+                        <h4 class="pb-3 skill-type">{{ skill_type }}</h4>
+                        {% for skill in skills %}
+                            {% if skill_type == skill.skill_type %}
+                                {% for sub_skill_type in sub_skill_types %}
+                                    {% if skill.sub_skill_type == sub_skill_type and skill.skill_type == skill_type %}
+                                        <div class="col-md-4 px-5">
+                                            <div class="w-100 float-start">
+                                                <li>{{ skill.skill_name }}</li>
+                                                {% if skill.skill_level %}
+                                                    <div class="progress mx-4 my-3">
+                                                        <div class="progress-bar" role="progressbar"
+                                                             style="width: {{ skill.skill_level }}%;"
+                                                             aria-valuenow="{{ skill.skill_level }}"
+                                                             aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                    {% if skill.skill_type == sub_skill_type %}
+                                    {% endif %}
+                                {% endfor %}
+                            {% endif %}
+                        {% endfor %}
                     </div>
-                    <div class="col-md-4 px-3">
-                        <div class="w-50 float-start">
-                            CSS
-                        </div>
-                        <div class="w-50 float-end">
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star-half"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-4 px-3">
-                        <div class="w-50 float-start">
-                            JavaScript
-                        </div>
-                        <div class="w-50 float-end">
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star-half"></span>
-                        </div>
-                    </div>
-                </div>
+                    <br>
+                    <br>
+                {% endfor %}
             </div>
         </div>
     </section>
-    <hr>
     <section id="projects">
         <div class="row justify-content-center align-items-center">
             <h1 class="text-center">Projects</h1>
@@ -178,7 +166,6 @@
             </div>
         </div>
     </section>
-    <hr>
     <section id="contact">
         <div class="row justify-content-center align-items-center">
             <h1 class="text-center">Contact</h1>

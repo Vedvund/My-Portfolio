@@ -31,6 +31,13 @@ nav {
     font-weight: bold;
 }
 
+.active .nav-link {
+    background-color: var(--main-text-color);
+    color: var(--main-bg-color) !important;
+    font-weight: bold;
+}
+
+
 .navbar-collapse {
     background-color: var(--main-bg-color) !important;
 }
@@ -70,6 +77,16 @@ footer {
 
 #intro .row {
     min-height: calc(100vh - 75px);
+}
+
+#design-approach, #skills, #projects, #contact {
+    padding-top: 75px;
+    min-height: 75vh;
+}
+
+#profilePic {
+    border-radius: 30px;
+    border: 50px solid var(--light-bg-color);
 }
 
 
@@ -139,4 +156,10 @@ footer {
 .fa-angles-up {
     color: var(--main-text-color);
     font-size: 2rem;
+}
+
+.sub-skill {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
