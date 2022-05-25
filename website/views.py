@@ -8,12 +8,10 @@ def index(request):
     user = User.objects.get(username='vedvund')
     personal_info = PersonalInfo.objects.get()
     skill_types = SkillType.objects.all()
-    sub_skill_types = SubSkillType.objects.all()
     skills = Skill.objects.all().order_by('skill_name').order_by('skill_type')
     return render(request, 'website/index.html', {
         'user': user,
         'personal_info': personal_info,
-        'sub_skill_types': sub_skill_types,
         'skill_types': skill_types,
         'skills': skills,
     })

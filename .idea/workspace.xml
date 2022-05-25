@@ -4,26 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d625f57-b153-4f9c-80a8-156f302ff858" name="Changes" comment="add fontawesome package">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/navScrolActive.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/migrations/0002_remove_personalinfo_profilepic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/migrations/0003_remove_personalinfo_dateofbirth_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/migrations/0004_rename_facebooklink_personalinfo_facebook_link_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/migrations/0005_skills_remove_personalinfo_owner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/migrations/0006_skill_skilltype_delete_skills_skill_skill_type.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/migrations/0007_subskilltype_alter_personalinfo_facebook_link_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/migrations/0008_alter_personalinfo_facebook_link_and_more.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Personal-Website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Personal-Website.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+    <list default="true" id="1d625f57-b153-4f9c-80a8-156f302ff858" name="Changes" comment="Added skills to data base">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/website/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/website/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/website/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/website/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/views.py" afterDir="false" />
     </list>
@@ -63,20 +46,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.jetbrains.django.DjangoModulesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.django.DjangoModulesConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/js" />
@@ -129,7 +112,9 @@
       <workItem from="1653118174646" duration="122000" />
       <workItem from="1653198201034" duration="2063000" />
       <workItem from="1653200301811" duration="1608000" />
-      <workItem from="1653448215528" duration="19807000" />
+      <workItem from="1653448215528" duration="19883000" />
+      <workItem from="1653472942383" duration="228000" />
+      <workItem from="1653473196520" duration="36000" />
     </task>
     <task id="LOCAL-00001" summary="Added - WebStorm initial files...">
       <created>1646667073548</created>
@@ -180,7 +165,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653201896919</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added skills to data base">
+      <created>1653471149513</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1653471149513</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added skills to data base">
+      <created>1653471172906</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1653471172906</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +204,7 @@
     <MESSAGE value="Add projects and contact section" />
     <MESSAGE value="Update Doc index.html" />
     <MESSAGE value="add fontawesome package" />
-    <option name="LAST_COMMIT_MESSAGE" value="add fontawesome package" />
+    <MESSAGE value="Added skills to data base" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added skills to data base" />
   </component>
 </project>

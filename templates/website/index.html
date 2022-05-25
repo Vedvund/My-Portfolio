@@ -62,26 +62,20 @@
                         <h4 class="pb-3 skill-type">{{ skill_type }}</h4>
                         {% for skill in skills %}
                             {% if skill_type == skill.skill_type %}
-                                {% for sub_skill_type in sub_skill_types %}
-                                    {% if skill.sub_skill_type == sub_skill_type and skill.skill_type == skill_type %}
-                                        <div class="col-md-4 px-5">
-                                            <div class="w-100 float-start">
-                                                <li>{{ skill.skill_name }}</li>
-                                                {% if skill.skill_level %}
-                                                    <div class="progress mx-4 my-3">
-                                                        <div class="progress-bar" role="progressbar"
-                                                             style="width: {{ skill.skill_level }}%;"
-                                                             aria-valuenow="{{ skill.skill_level }}"
-                                                             aria-valuemin="0" aria-valuemax="100">
-                                                        </div>
-                                                    </div>
-                                                {% endif %}
+                                <div class="col-md-4 px-5">
+                                    <div class="w-100 float-start">
+                                        <li>{{ skill.skill_name }}</li>
+                                        {% if skill.skill_level %}
+                                            <div class="progress mx-4 my-3">
+                                                <div class="progress-bar" role="progressbar"
+                                                     style="width: {{ skill.skill_level }}%;"
+                                                     aria-valuenow="{{ skill.skill_level }}"
+                                                     aria-valuemin="0" aria-valuemax="100">
+                                                </div>
                                             </div>
-                                        </div>
-                                    {% endif %}
-                                    {% if skill.skill_type == sub_skill_type %}
-                                    {% endif %}
-                                {% endfor %}
+                                        {% endif %}
+                                    </div>
+                                </div>
                             {% endif %}
                         {% endfor %}
                     </div>
