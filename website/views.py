@@ -12,13 +12,16 @@ from django.template.loader import get_template
 
 
 class HomePage(View):
-    context = {
-        'user': User.objects.get(username='vedvund'),
-        'personal_info': PersonalInfo.objects.get(),
-        'skill_types': SkillType.objects.all(),
-        'skills': Skill.objects.all().order_by('skill_name').order_by('skill_type'),
-        'project_details': ProjectDetails.objects.all(),
-    }
+    try:
+        context = {
+            'user': User.objects.get(username='vedvund'),
+            'personal_info': PersonalInfo.objects.get(),
+            'skill_types': SkillType.objects.all(),
+            'skills': Skill.objects.all().order_by('skill_name').order_by('skill_type'),
+            'project_details': ProjectDetails.objects.all(),
+        }
+    except:
+        context = {}
 
     @staticmethod
     def send_user_copy(contact_form):
