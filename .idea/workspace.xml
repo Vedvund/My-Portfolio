@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1d625f57-b153-4f9c-80a8-156f302ff858" name="Changes" comment="update AWS config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +124,7 @@
       <workItem from="1653490390257" duration="7858000" />
       <workItem from="1653500120300" duration="5530000" />
       <workItem from="1653506219974" duration="517000" />
-      <workItem from="1653507866824" duration="593000" />
+      <workItem from="1653507866824" duration="974000" />
     </task>
     <task id="LOCAL-00001" summary="Added - WebStorm initial files...">
       <created>1646667073548</created>
@@ -260,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653504747552</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="update AWS config">
+      <created>1653508574260</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1653508574260</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +277,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

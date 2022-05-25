@@ -214,7 +214,7 @@ LOGGING = {
 
 # heroku settings
 # db_from_env = dj_database_url.config(conn_max_age=0, ssl_require=False)
-# django_on_heroku.settings(locals(), staticfiles=False)
+django_on_heroku.settings(locals(), staticfiles=False)
 
 # Auth redirect
 # LOGIN_URL = 'accounts:sign-in'
