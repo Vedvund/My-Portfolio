@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d625f57-b153-4f9c-80a8-156f302ff858" name="Changes" comment="Added AWS S3 config">
-      <change afterPath="$PROJECT_DIR$/static/images/favicon_io/about.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/favicon_io/android-chrome-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/favicon_io/android-chrome-512x512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/favicon_io/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/favicon_io/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/favicon_io/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/favicon_io/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/favicon_io/site.webmanifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/website/contactTemplate.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="1d625f57-b153-4f9c-80a8-156f302ff858" name="Changes" comment="updated email..">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/website/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/website/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/website/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/website/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +121,7 @@
       <workItem from="1653472942383" duration="228000" />
       <workItem from="1653473196520" duration="36000" />
       <workItem from="1653486605399" duration="2468000" />
-      <workItem from="1653490390257" duration="7548000" />
+      <workItem from="1653490390257" duration="7689000" />
     </task>
     <task id="LOCAL-00001" summary="Added - WebStorm initial files...">
       <created>1646667073548</created>
@@ -228,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653488686686</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="updated email..">
+      <created>1653498457970</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1653498457970</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +249,7 @@
     <MESSAGE value="Added skills to data base" />
     <MESSAGE value="Added projects to data base" />
     <MESSAGE value="Added AWS S3 config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added AWS S3 config" />
+    <MESSAGE value="updated email.." />
+    <option name="LAST_COMMIT_MESSAGE" value="updated email.." />
   </component>
 </project>

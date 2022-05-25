@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY', default='abc')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=True, cast=bool)
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', ]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'vedvund.herokuapp.com']
 
 # Application definition
 
@@ -145,7 +145,6 @@ else:
     MEDIA_URL = '/media/'
 
 STATICFILES_DIRS = [BASE_DIR / 'static']
-
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
