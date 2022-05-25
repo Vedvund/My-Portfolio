@@ -80,8 +80,12 @@ load_dotenv(find_dotenv())
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': config('PG_NAME', default='abc'),
+        'USER': config('PG_USER', default='abc'),
+        'PASSWORD': config('PG_PASSWORD', default='abc'),
+        'HOST': config('PG_HOST', default='abc'),
+        'PORT': config('PG_PORT', default='abc'),
     }
 }
 
@@ -209,8 +213,8 @@ LOGGING = {
 }
 
 # heroku settings
-db_from_env = dj_database_url.config(conn_max_age=0, ssl_require=False)
-django_on_heroku.settings(locals(), staticfiles=False)
+# db_from_env = dj_database_url.config(conn_max_age=0, ssl_require=False)
+# django_on_heroku.settings(locals(), staticfiles=False)
 
 # Auth redirect
 # LOGIN_URL = 'accounts:sign-in'
