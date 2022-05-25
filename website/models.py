@@ -29,4 +29,15 @@ class Skill(models.Model):
     description = models.TextField(blank=True, null=True)
 
     def __str__(self):
-        return f"{self.skill_type} - {self.skill_name}"
+        return self.skill_name
+
+
+class ProjectDetails(models.Model):
+    title = models.CharField(max_length=100, blank=True, null=True)
+    sub_title = models.CharField(max_length=100, blank=True, null=True)
+    description = models.TextField(blank=True, null=True)
+    company = models.CharField(max_length=100, blank=True, null=True)
+    tools = models.ManyToManyField('Skill', blank=True)
+    github_link = models.CharField(max_length=100, blank=True, null=True)
+    website_link = models.CharField(max_length=100, blank=True, null=True)
+    icon_image = models.ImageField(null=True, blank=True)

@@ -158,8 +158,20 @@ footer {
     font-size: 2rem;
 }
 
-.sub-skill {
+.sub-title {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    letter-spacing: 1px;
+}
+
+.card-sub-title{
     text-transform: uppercase;
     text-decoration: underline;
     text-underline-offset: 5px;
+}
+
+.project-title{
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }

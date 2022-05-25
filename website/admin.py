@@ -5,4 +5,4 @@ from .models import *
 admin.site.register(PersonalInfo)
 admin.site.register(Skill)
 admin.site.register(SkillType)
-admin.site.register(SubSkillType)
+admin.site.register(ProjectDetails)
