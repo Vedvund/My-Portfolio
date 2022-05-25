@@ -1,0 +1,190 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}
+{% endblock %}
+
+{% block style %}
+{% endblock %}
+
+{% block body %}
+    <section id="intro">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-5 p-5 p-md-3">
+                <h3>Hello, I’m {{ user.first_name }} {{ user.last_name }}.<br>A {{ personal_info.role }}.</h3>
+                <br>
+                <p>{{ personal_info.summary }}</p>
+                <hr>
+                <a href="{{ personal_info.linkedin_link }}" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="{{ personal_info.github_link }}" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="col-md-5 p-md-3 pb-5 text-center">
+                <img id="profilePic" src="{{ personal_info.profile_pic.url }}" alt="Profile Pic">
+            </div>
+        </div>
+    </section>
+    <section id="design-approach">
+        <div class="row justify-content-center align-items-center text-center my-auto">
+            <h1>Design Approach</h1>
+            <div class="col">
+                <div class="row my-md-5 my-3 justify-content-center align-items-center">
+                    <div class="col-md-3 py-4 about-card m-2">
+                        <img class="pb-4" src="{% static 'images/about-cards/responsive.svg' %}" alt="responsive">
+                        <h4 class="pb-4 sub-title">Responsive</h4>
+                        <p>My layouts will work on any device, big or small.</p>
+                    </div>
+                    <div class="col-md-3 py-4 about-card m-2">
+                        <img class="pb-4" src="{% static 'images/about-cards/easy-to-use.svg' %}" alt="easy to use">
+                        <h4 class="pb-4 sub-title">Easy to Use</h4>
+                        <p>Strong preference for easy to use, intuitive UX/UI.</p>
+                    </div>
+                    <div class="col-md-3 py-4 about-card m-2">
+                        <img class="pb-4" src="{% static 'images/about-cards/fast.svg' %}" alt="easy to use">
+                        <h4 class="pb-4 sub-title">Fast</h4>
+                        <p>Fast load times and lag free interaction, my highest priority.</p>
+                    </div>
+                    <div class="col-md-3 py-4 about-card m-2">
+                        <img class="pb-4" src="{% static 'images/about-cards/dynamic.svg' %}" alt="easy to use">
+                        <h4 class="pb-4 sub-title">Dynamic</h4>
+                        <p>Websites don't have to be static, I love making pages come to life.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="row justify-content-center align-items-center">
+            <h1 class="text-center">Skills</h1>
+            <div class="col-11 skills-box m-5 p-4">
+                {% for skill_type in skill_types %}
+                    <div class="row">
+                        <h4 class="pb-3 sub-title">{{ skill_type }}</h4>
+                        {% for skill in skills %}
+                            {% if skill_type == skill.skill_type %}
+                                <div class="col-md-4 px-5">
+                                    <div class="w-100 float-start">
+                                        <li>{{ skill.skill_name }}</li>
+                                        {% if skill.skill_levels %}
+                                            <div class="progress mx-4 my-3">
+                                                <div class="progress-bar" role="progressbar"
+                                                     style="width: {{ skill.skill_level }}%;"
+                                                     aria-valuenow="{{ skill.skill_level }}"
+                                                     aria-valuemin="0" aria-valuemax="100">
+                                                </div>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <br>
+                    <br>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="row justify-content-center align-items-center">
+            <h1 class="text-center">Projects</h1>
+            <div class="col">
+                <div class="row my-md-5 my-3 justify-content-center align-items-center">
+                    {% for project_detail in project_details %}
+                        <div class="col-md-6 p-4 project-card m-2 text-center">
+                            <h4 class="project-title">{{ project_detail.title }}</h4>
+                            <p class="pb-3">{{ project_detail.sub_title }}</p>
+
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <img class="rounded" src="{{ project_detail.icon_image.url }}" alt="project 1"
+                                         width="100%">
+                                </div>
+                                <div class="text-start col my-auto">
+                                    <p>Associated with {{ project_detail.company }}</p>
+
+                                    {% if project_detail.github_link %}
+                                        <h6 class="card-sub-title mb-3">Links:</h6>
+                                        <a href="{{ project_detail.github_link }}"><i
+                                                class="fa-brands fa-github"></i></a>
+                                    {% endif %}
+                                    {% if project_detail.website_link %}
+                                        <a href="{{ project_detail.website_link }}"><i class="fa-solid fa-link"></i></a>
+                                    {% endif %}
+
+                                </div>
+
+                            </div>
+                            <div class="pb-3 text-start">
+                                <h6 class="card-sub-title mb-2">Tools:</h6>
+                                <p>
+                                    {% for tool in project_detail.tools.all %}
+                                        <small class="project-tool">{{ tool }}</small> |
+                                        {% if forloop.last %}
+                                            <small class="project-tool">{{ tool }}</small>
+                                        {% endif %}
+
+                                    {% endfor %}
+                                </p>
+                            </div>
+                            <div class="pb-3 text-start">
+                                <h6 class="card-sub-title mb-2">Description:</h6>
+                                <p>{{ project_detail.description|truncatechars:100 }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="row justify-content-center align-items-center">
+            <h1 class="text-center">Contact</h1>
+            <div class="col-11 contact-form m-5 p-4">
+                <h5 class="text-center pb-3">Do you have a question or want to make something special together?</h5>
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="row px-5">
+                        {% if messages %}
+                            {% for message in messages %}
+                                <div class="row justify-content-center align-items-center text-center">
+                                    <div class=" col-11 text-{{ message.tags }} mb-3" role="alert">
+                                        {{ message }}
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+                        <div class="col-sm-6 mb-4">
+                            <label class="w-100">
+                                <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+                            </label>
+                        </div>
+                        <div class="col-sm-6 mb-4">
+                            <label class="w-100">
+                                <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+                            </label>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <label class="w-100">
+                                <input type="text" class="form-control" placeholder="Purpose / Subject" name="purpose"
+                                       required>
+                            </label>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <label class="w-100">
+                                <textarea class="form-control" rows="5" placeholder="Your Message" name="message"
+                                          required></textarea>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary" type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block script %}
+{% endblock %}
