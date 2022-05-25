@@ -101,7 +101,7 @@
                                          width="100%">
                                 </div>
                                 <div class="text-start col my-auto">
-                                <p>Associated with {{ project_detail.company }}</p>
+                                    <p>Associated with {{ project_detail.company }}</p>
 
                                     {% if project_detail.github_link %}
                                         <h6 class="card-sub-title mb-3">Links:</h6>
@@ -142,31 +142,43 @@
             <h1 class="text-center">Contact</h1>
             <div class="col-11 contact-form m-5 p-4">
                 <h5 class="text-center pb-3">Do you have a question or want to make something special together?</h5>
-                <form>
+                <form method="post">
+                    {% csrf_token %}
                     <div class="row px-5">
+                        {% if messages %}
+                            {% for message in messages %}
+                                <div class="row justify-content-center align-items-center text-center">
+                                    <div class=" col-11 text-{{ message.tags }} mb-3" role="alert">
+                                        {{ message }}
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        {% endif %}
                         <div class="col-sm-6 mb-4">
                             <label class="w-100">
-                                <input type="text" class="form-control" placeholder="Your Name">
+                                <input type="text" class="form-control" placeholder="Your Name" name="name" required>
                             </label>
                         </div>
                         <div class="col-sm-6 mb-4">
                             <label class="w-100">
-                                <input type="email" class="form-control" placeholder="Your Email">
+                                <input type="email" class="form-control" placeholder="Your Email" name="email" required>
                             </label>
                         </div>
                         <div class="col-12 mb-4">
                             <label class="w-100">
-                                <input type="text" class="form-control" placeholder="Purpose / Subject">
+                                <input type="text" class="form-control" placeholder="Purpose / Subject" name="purpose"
+                                       required>
                             </label>
                         </div>
                         <div class="col-12 mb-4">
                             <label class="w-100">
-                                <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                                <textarea class="form-control" rows="5" placeholder="Your Message" name="message"
+                                          required></textarea>
                             </label>
                         </div>
                     </div>
                     <div class="text-center">
-                        <button class="btn btn-primary">Send Message</button>
+                        <button class="btn btn-primary" type="submit">Send Message</button>
                     </div>
                 </form>
             </div>

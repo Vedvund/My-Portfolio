@@ -165,13 +165,17 @@ footer {
     letter-spacing: 1px;
 }
 
-.card-sub-title{
+.card-sub-title {
     text-transform: uppercase;
     text-decoration: underline;
     text-underline-offset: 5px;
 }
 
-.project-title{
+.project-title {
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+.alert {
+    height: 1rem !important;
 }

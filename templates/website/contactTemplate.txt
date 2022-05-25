@@ -1,0 +1,14 @@
+Dear [NAME],
+
+Thank you for contacting me. I will get in touch with you as soon as possible.
+
+Below is the copy of your Message:
+Purpose:- [PURPOSE]
+Message:- [MESSAGE]
+
+In case you want to update anything, you can reply to this mail.
+
+Note: This is automatically generated mail on [DATE_TIME]
+
+Regards,
+Vedavyas Vundyala.
