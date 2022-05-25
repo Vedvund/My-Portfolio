@@ -123,7 +123,7 @@ footer {
 .project-card {
     background-color: var(--light-bg-color);
     border-radius: 30px;
-    max-width: 390px;
+    max-width: 600px;
 
 }
 

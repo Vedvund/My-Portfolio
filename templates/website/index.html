@@ -91,23 +91,28 @@
             <div class="col">
                 <div class="row my-md-5 my-3 justify-content-center align-items-center">
                     {% for project_detail in project_details %}
-                        <div class="col-md-4 p-4 project-card m-2 text-center">
+                        <div class="col-md-6 p-4 project-card m-2 text-center">
                             <h4 class="project-title">{{ project_detail.title }}</h4>
                             <p class="pb-3">{{ project_detail.sub_title }}</p>
-                            <div class="text-center pb-3">
-                                <img class="rounded" src="{{ project_detail.icon_image.url }}" alt="project 1"
-                                     width="100%">
 
-                            </div>
-                            <div class="text-start mb-3">
-                                {% if project_detail.github_link %}
-                                    <h6 class="card-sub-title mb-3">Links:</h6>
-                                    <a href="{{ project_detail.github_link }}"><i
-                                            class="fa-brands fa-github"></i></a>
-                                {% endif %}
-                                {% if project_detail.website_link %}
-                                    <a href="{{ project_detail.website_link }}"><i class="fa-solid fa-link"></i></a>
-                                {% endif %}
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <img class="rounded" src="{{ project_detail.icon_image.url }}" alt="project 1"
+                                         width="100%">
+                                </div>
+                                <div class="text-start col my-auto">
+                                <p>Associated with {{ project_detail.company }}</p>
+
+                                    {% if project_detail.github_link %}
+                                        <h6 class="card-sub-title mb-3">Links:</h6>
+                                        <a href="{{ project_detail.github_link }}"><i
+                                                class="fa-brands fa-github"></i></a>
+                                    {% endif %}
+                                    {% if project_detail.website_link %}
+                                        <a href="{{ project_detail.website_link }}"><i class="fa-solid fa-link"></i></a>
+                                    {% endif %}
+
+                                </div>
 
                             </div>
                             <div class="pb-3 text-start">
