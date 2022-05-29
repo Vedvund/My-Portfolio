@@ -110,7 +110,8 @@
                                                 class="fa-brands fa-github"></i></a>
                                     {% endif %}
                                     {% if project_detail.website_link %}
-                                        <a href="{{ project_detail.website_link }}" target="_blank"><i class="fa-solid fa-link"></i></a>
+                                        <a href="{{ project_detail.website_link }}" target="_blank"><i
+                                                class="fa-solid fa-link"></i></a>
                                     {% endif %}
                                 </div>
 
@@ -119,11 +120,11 @@
                                 <h6 class="card-sub-title mb-2">Tools:</h6>
                                 <p>
                                     {% for tool in project_detail.tools.all %}
-                                        <small class="project-tool">{{ tool }}</small> |
                                         {% if forloop.last %}
                                             <small class="project-tool">{{ tool }}</small>
+                                        {% else %}
+                                            <small class="project-tool">{{ tool }}</small> |
                                         {% endif %}
-
                                     {% endfor %}
                                 </p>
                             </div>
