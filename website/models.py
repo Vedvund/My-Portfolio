@@ -43,3 +43,6 @@ class ProjectDetails(models.Model):
     github_link = models.CharField(max_length=100, blank=True, null=True)
     website_link = models.CharField(max_length=100, blank=True, null=True)
     icon_image = models.ImageField(null=True, blank=True)
+
+    def __str__(self):
+        return self.title

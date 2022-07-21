@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d625f57-b153-4f9c-80a8-156f302ff858" name="Changes" comment="Added telegram bot and updated few details" />
+    <list default="true" id="1d625f57-b153-4f9c-80a8-156f302ff858" name="Changes" comment="update requirements.txt">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/models.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,7 +130,8 @@
       <workItem from="1653813596478" duration="2938000" />
       <workItem from="1653826762416" duration="3435000" />
       <workItem from="1653830279515" duration="837000" />
-      <workItem from="1658417131144" duration="3296000" />
+      <workItem from="1658417131144" duration="3502000" />
+      <workItem from="1658422068047" duration="33000" />
     </task>
     <task id="LOCAL-00001" summary="Added - WebStorm initial files...">
       <created>1646667073548</created>
@@ -402,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658420080129</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="update requirements.txt">
+      <created>1658420480147</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1658420480147</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,6 +461,7 @@
     <MESSAGE value="updated project card" />
     <MESSAGE value="projects forloop resolved bug" />
     <MESSAGE value="Added telegram bot and updated few details" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added telegram bot and updated few details" />
+    <MESSAGE value="update requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="update requirements.txt" />
   </component>
 </project>
