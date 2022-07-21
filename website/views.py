@@ -9,6 +9,21 @@ from django.conf import settings
 from datetime import datetime
 from django.contrib import messages
 from django.template.loader import get_template
+import requests
+from dotenv import load_dotenv, find_dotenv
+from decouple import config
+
+
+def send_telegram_message(remote_address):
+    BOT_TOKEN = config('TELEGRAM_BOT_TOKEN', default='abc')
+    ADMIN_TELEGRAM_ID = config('ADMIN_TELEGRAM_ID', default='abc')
+    BOT_API = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+    server_message = f"you got a visitor from {remote_address}"
+    parameter = {
+        "chat_id": ADMIN_TELEGRAM_ID,
+        "text": server_message
+    }
+    requests.post(url=BOT_API, params=parameter)
 
 
 class HomePage(View):
@@ -45,6 +60,14 @@ class HomePage(View):
             }
         except:
             context = {}
+
+        x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+        if x_forwarded_for:
+            ip = x_forwarded_for.split(',')[0]
+        else:
+            ip = request.META.get('REMOTE_ADDR')
+
+        send_telegram_message(str(ip))
 
         return render(request, self.template_name, context)
 
