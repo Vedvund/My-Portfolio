@@ -2,6 +2,8 @@ asgiref==3.5.1
 astroid==2.11.5
 boto3==1.23.7
 botocore==1.26.7
+certifi==2022.6.15
+charset-normalizer==2.1.0
 dill==0.3.4
 dj-database-url==0.5.0
 Django==4.0.4
@@ -10,8 +12,10 @@ django-extensions==3.1.5
 django-generate-secret-key==1.0.2
 django-js-asset==2.0.0
 django-on-heroku==1.1.2
+django-sms==0.5.0
 django-storages==1.12.3
 gunicorn==20.1.0
+idna==3.3
 isort==5.10.1
 jmespath==1.0.0
 lazy-object-proxy==1.7.1
@@ -23,6 +27,7 @@ pylint==2.13.9
 python-dateutil==2.8.2
 python-decouple==3.6
 python-dotenv==0.20.0
+requests==2.28.1
 s3transfer==0.5.2
 six==1.16.0
 sqlparse==0.4.2
